@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container1, .container2{
+            display: flex;
+        }
+        [class*="c-"]{
+            width: 326.666667px;
+            height: 324.5px;
+            overflow: hidden;
+        }
+        .c-1 img{
+             transition: 0.5s opacity;
+        }
+        .c-1:hover img{
+            opacity: 0.4;
+        }
+        .c-1:hover {
+            background: skyblue;
+        }
+        .c-2 img{
+           transform: translateX(-326.666667px);
+           transition: 0.5s opacity;
+           transition: 0.8s;
+        }
+        .c-2:hover img{
+            opacity: 0.4;
+            transform: translate(0px)
+        }
+        .c-2:hover {
+            background: tomato;
+        }
+        .c-3 img {
+            transform: translateX(-653.333334px);
+            transition: 0.5s opacity;
+            transition: 0.8s;
+        }
+        .c-3:hover img{
+            opacity: 0.4;
+            transform: rotate(180deg)
+        }
+        .c-3:hover {
+            background: mediumturquoise;
+        }
+        .c-4 img{
+            transform: translateY(-324.5px);
+            transition: 0.5s opacity;
+            transition 0.8s;
+        }
+        .c-4:hover img{
+            opacity: 0.4;
+            transform: scale(1.5);
+        }
+        .c-4:hover {
+            background: orange;
+        }
+        .c-5 img{
+            transform: translate(-326.666667px, -324.5px);
+            transition: 0.5s opacity;
+            transition 0.8s;
+        }
+        .c-5:hover img{
+            opacity: 0.4;
+        }
+        .c-5:hover {
+            background: mediumpurple;
+        }
+        .c-6 img{
+            transform: translate(-653.333334px, -324.5px);
+            transition: 0.5s opacity;
+            transition 0.8s;
+        }
+        .c-6:hover img{
+            opacity: 0.4;
+            transform: scale(2);
+        }
+        .c-6:hover {
+            background: grey;
+        }
+        
+    </style>
+</head>,
+<body>
+   <div class="container1">
+    <div class="c-1">
+            <img src="img/1.jpg" alt=""> 
+    </div>
+    <div class="c-2">
+            <img src="img/1.jpg" alt="">  
+    </div>
+    <div class="c-3">
+            <img src="img/1.jpg" alt="">  
+    </div>
+    </div>
+    <div class="container2">
+    <div class="c-4">
+            <img src="img/1.jpg" alt="">  
+    </div>
+    <div class="c-5">
+            <img src="img/1.jpg" alt=""> 
+    </div>
+    <div class="c-6">
+            <img src="img/1.jpg" alt=""> 
+    </div>
+    </div>
+</body>
+</html>
